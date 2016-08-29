@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "28B63A851A459F5900225C66"
-               BuildableName = "XLPagerTabStripExample.app"
-               BlueprintName = "XLPagerTabStripExample"
+               BlueprintIdentifier = "8E0B6C3A1D73F86A00B95B18"
+               BuildableName = "XLPagerTabStrip.framework"
+               BlueprintName = "XLPagerTabStrip"
                ReferencedContainer = "container:XLPagerTabStrip.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,36 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "28B63A9E1A459F5900225C66"
-               BuildableName = "XLPagerTabStripTests.xctest"
-               BlueprintName = "XLPagerTabStripTests"
-               ReferencedContainer = "container:XLPagerTabStrip.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8E0B6C431D73F86A00B95B18"
-               BuildableName = "XLPagerTabStripTests.xctest"
-               BlueprintName = "XLPagerTabStripTests"
-               ReferencedContainer = "container:XLPagerTabStrip.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "28B63A851A459F5900225C66"
-            BuildableName = "XLPagerTabStripExample.app"
-            BlueprintName = "XLPagerTabStripExample"
-            ReferencedContainer = "container:XLPagerTabStrip.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -71,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "28B63A851A459F5900225C66"
-            BuildableName = "XLPagerTabStripExample.app"
-            BlueprintName = "XLPagerTabStripExample"
+            BlueprintIdentifier = "8E0B6C3A1D73F86A00B95B18"
+            BuildableName = "XLPagerTabStrip.framework"
+            BlueprintName = "XLPagerTabStrip"
             ReferencedContainer = "container:XLPagerTabStrip.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -90,16 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "28B63A851A459F5900225C66"
-            BuildableName = "XLPagerTabStripExample.app"
-            BlueprintName = "XLPagerTabStripExample"
+            BlueprintIdentifier = "8E0B6C3A1D73F86A00B95B18"
+            BuildableName = "XLPagerTabStrip.framework"
+            BlueprintName = "XLPagerTabStrip"
             ReferencedContainer = "container:XLPagerTabStrip.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
