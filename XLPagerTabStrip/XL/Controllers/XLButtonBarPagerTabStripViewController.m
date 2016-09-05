@@ -96,7 +96,7 @@
 {
     [super viewDidAppear:animated];
     self.isViewAppearing = NO;
-    [self selectButtonBarItemAtIndex:self.currentIndex];
+    [self selectButtonBarItemAtIndex:self.currentIndex animated:NO];
 }
 
 - (void)viewWillLayoutSubviews
@@ -327,6 +327,14 @@
             self.changeCurrentIndexBlock(oldCell, newCell, YES);
         }
     }
+    [self selectButtonBarItemAtIndex:toIndex animated:YES];
+}
+
+- (void)selectButtonBarItemAtIndex:(NSInteger)index animated:(BOOL)animated {
+    [self.buttonBarView deselectItemAtIndexPath:[self.buttonBarView indexPathsForSelectedItems].firstObject animated:animated];
+    [self.buttonBarView selectItemAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0]
+                                     animated:animated
+                               scrollPosition:UICollectionViewScrollPositionNone];
 }
 
 -(void)pagerTabStripViewController:(XLPagerTabStripViewController *)pagerTabStripViewController
@@ -346,14 +354,6 @@
             self.changeCurrentIndexProgressiveBlock(oldCell, newCell, progressPercentage, indexWasChanged, YES);
         }
     }
-    [self selectButtonBarItemAtIndex:toIndex];
-}
-
-- (void)selectButtonBarItemAtIndex:(NSInteger)index {
-    [self.buttonBarView deselectItemAtIndexPath:[self.buttonBarView indexPathsForSelectedItems].firstObject animated:YES];
-    [self.buttonBarView selectItemAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0]
-                                     animated:YES
-                               scrollPosition:UICollectionViewScrollPositionNone];
 }
 
 #pragma mark - UICollectionViewDelegateFlowLayout
