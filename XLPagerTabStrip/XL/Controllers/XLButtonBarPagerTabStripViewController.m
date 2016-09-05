@@ -96,6 +96,7 @@
 {
     [super viewDidAppear:animated];
     self.isViewAppearing = NO;
+    [self selectButtonBarItemAtIndex:self.currentIndex];
 }
 
 - (void)viewWillLayoutSubviews
@@ -345,6 +346,14 @@
             self.changeCurrentIndexProgressiveBlock(oldCell, newCell, progressPercentage, indexWasChanged, YES);
         }
     }
+    [self selectButtonBarItemAtIndex:toIndex];
+}
+
+- (void)selectButtonBarItemAtIndex:(NSInteger)index {
+    [self.buttonBarView deselectItemAtIndexPath:[self.buttonBarView indexPathsForSelectedItems].firstObject animated:YES];
+    [self.buttonBarView selectItemAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0]
+                                     animated:YES
+                               scrollPosition:UICollectionViewScrollPositionNone];
 }
 
 #pragma mark - UICollectionViewDelegateFlowLayout
